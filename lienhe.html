@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liên hệ - Nhà Hàng Ngon</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background: #fdfaf5;
+        color: #333;
+        line-height: 1.7;
+      }
+
+      /* Header & Menu (giống các trang khác) */
+      .header {
+        background: #8b4513;
+        color: white;
+        text-align: center;
+        padding: 25px;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      .nav {
+        background: #6d3710;
+        text-align: center;
+        padding: 18px 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+      .nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 35px;
+        font-size: 19px;
+        font-weight: bold;
+        transition: 0.4s;
+      }
+      .nav a:hover {
+        color: #ffeb99;
+      }
+
+      /* Banner tiêu đề */
+      .banner-lh {
+        background: linear-gradient(
+            rgba(139, 69, 19, 0.9),
+            rgba(100, 50, 10, 0.95)
+          ),
+          url("https://images.unsplash.com/photo-1517248135467-2c7ed3da9ab7?w=1600")
+            center/cover;
+        color: white;
+        text-align: center;
+        padding: 120px 20px;
+      }
+      .banner-lh h1 {
+        font-size: 60px;
+        margin-bottom: 15px;
+      }
+      .banner-lh p {
+        font-size: 24px;
+      }
+
+      /* Nội dung liên hệ */
+      .noi-dung {
+        max-width: 1200px;
+        margin: 70px auto;
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: start;
+      }
+      .thong-tin h2 {
+        color: #8b4513;
+        font-size: 36px;
+        margin-bottom: 30px;
+      }
+      .thong-tin p {
+        margin: 18px 0;
+        font-size: 18px;
+      }
+      .thong-tin strong {
+        color: #8b4513;
+      }
+
+      /* Form liên hệ */
+      .form-lh {
+        background: white;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+        transition: 0.4s;
+      }
+      .form-lh:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 50px rgba(139, 69, 19, 0.2);
+      }
+      .form-lh input,
+      .form-lh textarea {
+        width: 100%;
+        padding: 15px;
+        margin: 12px 0;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+        font-size: 17px;
+        transition: 0.3s;
+      }
+      .form-lh input:focus,
+      .form-lh textarea:focus {
+        border-color: #8b4513;
+        outline: none;
+        box-shadow: 0 0 10px rgba(139, 69, 19, 0.3);
+      }
+      .nut-gui {
+        background: #e74c3c;
+        color: white;
+        padding: 16px 40px;
+        border: none;
+        border-radius: 12px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: 0.4s;
+      }
+      .nut-gui:hover {
+        background: #c0392b;
+        transform: scale(1.05);
+      }
+
+      /* Thông báo */
+      #thongbao {
+        display: none;
+        margin-top: 20px;
+        padding: 20px;
+        background: #d4edda;
+        color: #155724;
+        border-radius: 12px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      /* Bản đồ */
+      .ban-do {
+        margin-top: 50px;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      }
+
+      /* Footer */
+      .footer {
+        background: #2c1a0d;
+        color: #eee;
+        text-align: center;
+        padding: 40px;
+        font-size: 18px;
+        margin-top: 80px;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .noi-dung {
+          grid-template-columns: 1fr;
+        }
+        .banner-lh h1 {
+          font-size: 46px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">NHÀ HÀNG NGON</div>
+
+    <!-- Menu -->
+    <div class="nav">
+      <a href="index.html">Trang chủ</a>
+      <a href="thuc-don.html">Thực đơn</a>
+      <a href="khuyenmai.html">Khuyến mãi</a>
+      <a href="datban.html">Đặt bàn</a>
+      <a href="lienhe.html">Liên hệ</a>
+    </div>
+
+    <!-- Banner liên hệ -->
+    <div class="banner-lh">
+      <h1>LIÊN HỆ VỚI CHÚNG TÔI</h1>
+      <p>Rất hân hạnh được phục vụ quý khách!</p>
+    </div>
+
+    <!-- Nội dung chính -->
+    <div class="noi-dung">
+      <!-- Thông tin liên hệ -->
+      <div class="thong-tin">
+        <h2>Thông tin liên hệ</h2>
+        <p><strong>Địa chỉ:</strong> Phố Xốm, Phú Lương, Hà Đông</p>
+        <p><strong>Hotline đặt bàn:</strong> 0865645456</p>
+        <p><strong>Điện thoại cố định:</strong> 0865645456</p>
+        <p><strong>Email:</strong> manhhung411h@gmail.com@gmail.com</p>
+        <p><strong>Zalo/Fanpage:</strong> zalo:0865645456</p>
+        <p>
+          <strong>Giờ mở cửa:</strong> 10:00 – 22:00 (cả tuần, kể cả lễ Tết)
+        </p>
+
+        <div class="ban-do">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.44714909393!2d106.698166!3d10.776916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f38a7f6d2d3%3A0x3b1e7b2d8f8e9c0a!2sNh%C3%A0%20h%C3%A0ng!5e0!3m2!1svi!2s!4v1699000000000!5m2!1svi!2s"
+            width="100%"
+            height="380"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Form gửi tin nhắn -->
+      <div class="form-lh">
+        <h2>Gửi tin nhắn cho chúng tôi</h2>
+        <form id="formLH">
+          <input type="text" placeholder="Họ và tên" required />
+          <input type="email" placeholder="Email" required />
+          <input type="tel" placeholder="Số điện thoại" required />
+          <textarea
+            rows="6"
+            placeholder="Nội dung tin nhắn (đặt bàn, góp ý, hợp tác...)"
+          ></textarea>
+          <button type="submit" class="nut-gui">GỬI TIN NHẮN</button>
+        </form>
+        <div id="thongbao">
+          Cảm ơn quý khách!<br />Chúng tôi đã nhận tin nhắn và sẽ phản hồi trong
+          vòng 30 phút.
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      © 2025 Nhà Hàng Ngon – Website thực hành sinh viên<br />
+      Được thiết kế với ❤ và rất nhiều cà phê
+    </div>
+
+    <!-- JavaScript gửi form -->
+    <script>
+      document
+        .getElementById("formLH")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          document.getElementById("thongbao").style.display = "block";
+          this.reset();
+          setTimeout(() => {
+            document.getElementById("thongbao").style.display = "none";
+          }, 7000);
+        });
+    </script>
+  </body>
+</html>
