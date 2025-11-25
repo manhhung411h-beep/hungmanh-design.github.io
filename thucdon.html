@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Thực Đơn - Nhà Hàng Ngon</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background: #fdfaf5;
+        color: #333;
+        line-height: 1.6;
+      }
+      .menu-chinh {
+        background: #8b4513;
+        padding: 20px 0;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      }
+      .menu-chinh a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0 30px;
+        padding: 10px;
+        transition: 0.3s;
+      }
+      .menu-chinh a:hover {
+        color: #ffeb99;
+      }
+
+      .tieu-de {
+        background: linear-gradient(
+            rgba(139, 69, 19, 0.9),
+            rgba(139, 69, 19, 0.95)
+          ),
+          url("https://images.unsplash.com/photo-1517248135467-2c7ed3da9ab7?w=1600")
+            center/cover;
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+      }
+      .tieu-de h1 {
+        font-size: 60px;
+        margin-bottom: 15px;
+      }
+
+      .noi-dung {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 0 20px;
+      }
+
+      .nhom-mon {
+        margin-bottom: 60px;
+        background: white;
+        border-radius: 20px;
+        padding: 40px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+      .ten-nhom {
+        font-size: 36px;
+        color: #8b4513;
+        margin-bottom: 30px;
+        text-align: center;
+        border-bottom: 4px solid #8b4513;
+        padding-bottom: 15px;
+      }
+
+      .mon {
+        display: flex;
+        justify-content: space-between;
+        padding: 18px 0;
+        border-bottom: 1px dashed #ddd;
+        transition: 0.3s;
+      }
+      .mon:hover {
+        background: #fff8e8;
+        border-radius: 10px;
+        padding: 18px 15px;
+        margin: 10px 0;
+      }
+      .ten-mon {
+        font-size: 22px;
+        font-weight: bold;
+      }
+      .mo-ta-mon {
+        color: #666;
+        font-size: 16px;
+        flex: 1;
+        margin-left: 20px;
+      }
+      .gia-mon {
+        color: #c0392b;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .chan-trang {
+        background: #2c1a0d;
+        color: #eee;
+        text-align: center;
+        padding: 40px;
+        margin-top: 50px;
+        font-size: 18px;
+      }
+      .nut-quay-lai {
+        display: inline-block;
+        background: #8b4513;
+        color: white;
+        padding: 15px 40px;
+        font-size: 20px;
+        border-radius: 10px;
+        text-decoration: none;
+        margin-top: 30px;
+        transition: 0.4s;
+      }
+      .nut-quay-lai:hover {
+        background: #6d3710;
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Menu điều hướng -->
+    <div class="menu-chinh">
+      <a href="index.html">Trang chủ</a>
+      <a href="thucdon.html">Thực đơn</a>
+      <a href="khuyenmai.html">Khuyến mãi</a>
+      <a href="lienhe.html">Liên hệ</a>
+    </div>
+
+    <!-- Tiêu đề lớn -->
+    <div class="tieu-de">
+      <h1>THỰC ĐƠN</h1>
+      <p>Hơn 50 món ngon Việt Nam truyền thống</p>
+    </div>
+
+    <!-- Nội dung thực đơn -->
+    <div class="noi-dung">
+      <!-- Phở & Bún -->
+      <div class="nhom-mon">
+        <h2 class="ten-nhom">PHỞ & BÚN</h2>
+        <div class="mon">
+          <div class="ten-mon">Phở bò tái nạm</div>
+          <div class="mo-ta-mon">Nước dùng ngọt thanh, bánh phở mềm</div>
+          <div class="gia-mon">65.000đ</div>
+        </div>
+        <div class="mon">
+          <div class="ten-mon">Phở gà ta</div>
+          <div class="mo-ta-mon">Thịt gà ta thả vườn</div>
+          <div class="gia-mon">60.000đ</div>
+        </div>
+        <div class="mon">
+          <div class="ten-mon">Bún chả Hà Nội</div>
+          <div class="mo-ta-mon">Thịt nướng than hoa</div>
+          <div class="gia-mon">60.000đ</div>
+        </div>
+        <div class="mon">
+          <div class="ten-mon">Bún bò Huế</div>
+          <div class="mo-ta-mon">Cay nồng đặc trưng</div>
+          <div class="gia-mon">70.000đ</div>
+        </div>
+      </div>
+
+      <!-- Cơm tấm -->
+      <div class="nhom-mon">
+        <h2 class="ten-nhom">CƠM TẤM & CƠM GÀ</h2>
+        <div class="mon">
+          <div class="ten-mon">Cơm tấm sườn bì chả</div>
+          <div class="mo-ta-mon">Đầy đủ topping</div>
+          <div class="gia-mon">55.000đ</div>
+        </div>
+        <div class="mon">
+          <div class="ten-mon">Cơm gà xối mỡ</div>
+          <div class="mo-ta-mon">Da giòn, thịt mềm</div>
+          <div class="gia-mon">60.000đ</div>
+        </div>
+      </div>
+
+      <!-- Lẩu & Nướng -->
+      <div class="nhom-mon">
+        <h2 class="ten-nhom">LẨU & NƯỚNG</h2>
+        <div class="mon">
+          <div class="ten-mon">Lẩu Thái chua cay</div>
+          <div class="mo-ta-mon">2-4 người</div>
+          <div class="gia-mon">320.000đ</div>
+        </div>
+        <div class="mon">
+          <div class="ten-mon">Lẩu riêu cua bắp bò</div>
+          <div class="mo-ta-mon">2-4 người</div>
+          <div class="gia-mon">320.000đ</div>
+        </div>
+        <div class="mon">
+          <div class="ten-mon">Bò nướng tảng</div>
+          <div class="mo-ta-mon">500g thịt bò Mỹ</div>
+          <div class="gia-mon">399.000đ</div>
+        </div>
+      </div>
+
+      <!-- Nước uống -->
+      <div class="nhom-mon">
+        <h2 class="ten-nhom">NƯỚC UỐNG</h2>
+        <div class="mon">
+          <div class="ten-mon">Trà đá</div>
+          <div class="gia-mon">5.000đ</div>
+        </div>
+        <div class="mon">
+          <div class="ten-mon">Nước ngọt (Coke, Pepsi)</div>
+          <div class="gia-mon">15.000đ</div>
+        </div>
+        <div class="mon">
+          <div class="ten-mon">Trà chanh</div>
+          <div class="gia-mon">25.000đ</div>
+        </div>
+        <div class="mon">
+          <div class="ten-mon">Sinh tố các loại</div>
+          <div class="gia-mon">35.000đ</div>
+        </div>
+      </div>
+
+      <a href="index.html" class="nut-quay-lai">Quay lại Trang chủ</a>
+    </div>
+
+    <div class="chan-trang">
+      <p>© 2025 Nhà Hàng Ngon • Thực đơn chính thức</p>
+      <p>LH: 0865645456</p>
+    </div>
+  </body>
+</html>

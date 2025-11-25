@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nhà Hàng Ngon - Trang chủ</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- MENU ĐA CẤP – ĐÃ LIÊN KẾT ĐƯỢC -->
+    <div class="menu-chinh">
+      <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li class="co-menu-con">
+          <a href="thucdon.html">Thực đơn</a>
+          <ul class="menu-con">
+            <li><a href="#">Phở - Bún</a></li>
+            <li><a href="#">Lẩu - Nướng</a></li>
+            <li><a href="#">Khai vị - Salad</a></li>
+            <li><a href="#">Tráng miệng</a></li>
+            <li><a href="#">Nước uống</a></li>
+          </ul>
+        </li>
+
+        <li><a href="khuyenmai.html">Khuyến mãi</a></li>
+        <li><a href="#lien-he">Liên hệ</a></li>
+      </ul>
+    </div>
+
+    <!-- Phần tiêu đề -->
+    <div class="tieu-de">
+      <h1>NHÀ HÀNG NGON</h1>
+      <p>Không gian ấm cúng, Món ăn đậm đà</p>
+      <button class="nut-lon" onclick="location.href='datban.html'">
+        Đặt bàn ngay
+      </button>
+    </div>
+
+    <!-- 3 món nổi bật -->
+    <div class="danh-sach-mon">
+      <div class="mon">
+        <img src="phobo.jpg" alt="Phở" />
+        <h3>Phở bò</h3>
+        <p class="gia">60.000đ</p>
+      </div>
+      <div class="mon">
+        <img src="buncha.jpg" alt="Bún chả" />
+        <h3>Bún chả Hà Nội</h3>
+        <p class="gia">55.000đ</p>
+      </div>
+      <div class="mon">
+        <img src="lauthai.jpg" alt="Lẩu" />
+        <h3>Lẩu Thái</h3>
+        <p class="gia">320.000đ</p>
+      </div>
+    </div>
+
+    <!-- Form đặt bàn nhanh -->
+    <div class="dat-ban">
+      <h2>Đặt bàn nhanh</h2>
+      <input type="text" placeholder="Họ tên" />
+      <input type="tel" placeholder="Số điện thoại" />
+      <button class="nut-xanh">Gửi ngay</button>
+    </div>
+    <footer class="chan-trang">
+      <p>© 2025 Nhà Hàng Ngon</p>
+      <p>LH: 0865645456</p>
+    </footer>
+  </body>
+</html>

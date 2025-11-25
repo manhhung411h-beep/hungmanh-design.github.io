@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f5f0;
+  color: #333;
+  text-align: center;
+}
+
+/* MENU CHÍNH */
+.menu-chinh {
+  background: #8b4513;
+  padding: 20px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1000;
+}
+.menu-chinh > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  flex-wrap: wrap;
+}
+.menu-chinh > ul > li {
+  position: relative;
+}
+.menu-chinh a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 20px;
+  display: block;
+  transition: 0.4s;
+}
+.menu-chinh > ul > li > a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  color: #ffeb99;
+}
+
+/* MENU CON – CHỈ HIỆN KHI RÊ CHUỘT VÀO "THỰC ĐƠN" */
+.menu-con {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #6d3710;
+  min-width: 230px;
+  border-radius: 12px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
+  padding: 15px 0;
+  z-index: 9999;
+}
+.menu-chinh > ul > li:hover > .menu-con {
+  display: block;
+}
+.menu-con a {
+  color: white;
+  padding: 14px 25px;
+  font-size: 17px;
+  transition: 0.3s;
+}
+.menu-con a:hover {
+  background: #8b4513;
+  border-radius: 8px;
+}
+
+/* CÁC PHẦN KHÁC */
+.tieu-de {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("tieude.jpg");
+  color: white;
+  padding: 140px 20px;
+}
+.tieu-de h1 {
+  font-size: 60px;
+  margin: 10px 0;
+}
+.nut-lon {
+  background: #e74c3c;
+  color: white;
+  padding: 18px 50px;
+  font-size: 24px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.nut-lon:hover {
+  background: #c0392b;
+  transform: scale(1.1);
+}
+
+.danh-sach-mon {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 80px 20px;
+  flex-wrap: wrap;
+  background: white;
+}
+.mon {
+  width: 320px;
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  transition: 0.5s;
+}
+.mon:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 30px 60px rgba(139, 69, 19, 0.3);
+}
+.mon img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.gia {
+  color: #8b4513;
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.dat-ban {
+  background: #fff8e8;
+  padding: 70px 20px;
+  margin: 40px 20px;
+  border-radius: 20px;
+}
+.dat-ban input {
+  width: 340px;
+  padding: 16px;
+  margin: 12px;
+  font-size: 18px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+.nut-xanh {
+  background: #8b4513;
+  color: white;
+  padding: 18px 70px;
+  font-size: 22px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.nut-xanh:hover {
+  background: #6d3710;
+  transform: scale(1.1);
+}
+
+.chan-trang {
+  background: #2c1a0d;
+  color: #eee;
+  padding: 40px;
+  font-size: 18px;
+}

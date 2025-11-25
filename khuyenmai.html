@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Khuyến Mãi - Nhà Hàng Ngon</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background: #fdfaf5;
+        color: #333;
+      }
+
+      /* Menu trên cùng */
+      .menu-chinh {
+        background: #8b4513;
+        padding: 20px 0;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      }
+      .menu-chinh a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0 35px;
+        padding: 10px;
+        transition: 0.3s;
+      }
+      .menu-chinh a:hover {
+        color: #ffeb99;
+      }
+
+      /* Tiêu đề */
+      .tieu-de {
+        background: linear-gradient(
+            rgba(220, 60, 50, 0.9),
+            rgba(200, 40, 30, 0.95)
+          ),
+          url("https://images.unsplash.com/photo-1517248135467-2c7ed3da9ab7?w=1600")
+            center/cover;
+        color: white;
+        text-align: center;
+        padding: 110px 20px;
+      }
+      .tieu-de h1 {
+        font-size: 62px;
+        margin-bottom: 15px;
+      }
+      .tieu-de p {
+        font-size: 24px;
+      }
+
+      /* Danh sách khuyến mãi */
+      .danh-sach-km {
+        max-width: 1100px;
+        margin: 60px auto;
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        gap: 40px;
+      }
+      .km {
+        background: white;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+        transition: 0.5s;
+      }
+      .km:hover {
+        transform: translateY(-15px);
+        box-shadow: 0 25px 50px rgba(220, 60, 50, 0.3);
+      }
+      .km img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+      }
+      .noi-dung-km {
+        padding: 30px;
+      }
+      .thoi-gian {
+        background: #27ae60;
+        color: white;
+        display: inline-block;
+        padding: 8px 20px;
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+      .tieu-de-km {
+        font-size: 28px;
+        color: #c0392b;
+        margin-bottom: 15px;
+      }
+      .mo-ta-km {
+        font-size: 18px;
+        line-height: 1.7;
+        color: #444;
+        margin-bottom: 20px;
+      }
+      .giam-gia {
+        font-size: 36px;
+        color: #e74c3c;
+        font-weight: bold;
+      }
+
+      .nut-quay-lai {
+        display: block;
+        width: 280px;
+        margin: 50px auto;
+        background: #8b4513;
+        color: white;
+        padding: 18px;
+        font-size: 22px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 15px;
+        transition: 0.4s;
+      }
+      .nut-quay-lai:hover {
+        background: #6d3710;
+        transform: scale(1.05);
+      }
+
+      .chan-trang {
+        background: #2c1a0d;
+        color: #eee;
+        text-align: center;
+        padding: 40px;
+        margin-top: 80px;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu-chinh">
+      <a href="index.html">Trang chủ</a>
+      <a href="thucdon.html">Thực đơn</a>
+      <a href="khuyenmai.html">Khuyến mãi</a>
+      <a href="lienhe.html">Liên hệ</a>
+    </div>
+
+    <div class="tieu-de">
+      <h1>KHUYẾN MÃI HOT</h1>
+      <p>Ưu đãi đặc biệt đang chờ bạn</p>
+    </div>
+
+    <div class="danh-sach-km">
+      <!-- KM 1 -->
+      <div class="km">
+        <img src="buncha.jpg" alt="Bún chả" />
+        <div class="noi-dung-km">
+          <div class="thoi-gian">Từ 01/04 → 30/04</div>
+          <h3 class="tieu-de-km">GIẢM 30% TẤT CẢ MÓN BÚN</h3>
+          <p class="mo-ta-km">
+            Áp dụng cho bún chả, bún bò, bún riêu… Chỉ có trong tháng này!
+          </p>
+          <div class="giam-gia">- 30%</div>
+        </div>
+      </div>
+
+      <!-- KM 2 -->
+      <div class="km">
+        <img src="lauthai.jpg" alt="Lẩu" />
+        <div class="noi-dung-km">
+          <div class="thoi-gian">Thứ 2 → Thứ 6</div>
+          <h3 class="tieu-de-km">GIẢM 100K KHI ĂN LẨU</h3>
+          <p class="mo-ta-km">
+            Giảm ngay 100.000đ cho mọi nồi lẩu (từ 2 người trở lên)
+          </p>
+          <div class="giam-gia">- 100.000đ</div>
+        </div>
+      </div>
+
+      <!-- KM 3 -->
+      <div class="km">
+        <img src="phobo.jpg" alt="Phở" />
+        <div class="noi-dung-km">
+          <div class="thoi-gian">Chỉ thứ 7 & CN</div>
+          <h3 class="tieu-de-km">MUA 2 TẶNG 1 PHỞ</h3>
+          <p class="mo-ta-km">Mua 2 tô phở bất kỳ → Tặng ngay 1 tô phở gà</p>
+          <div class="giam-gia">MUA 2 TẶNG 1</div>
+        </div>
+      </div>
+    </div>
+
+    <a href="index.html" class="nut-quay-lai">Quay lại Trang chủ</a>
+
+    <div class="chan-trang">
+      <p>© 2025 Nhà Hàng Ngon • Khuyến mãi cập nhật liên tục</p>
+      <p>LH: 0865645456</p>
+    </div>
+  </body>
+</html>
